@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="admin">
+  <head>
+    <title>Secret Santa</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <%= yield(:head) %>
+
+  </head>
+  <body>
+    <header>
+      <%= render "layouts/navbar" if logged_in? %>
+    </header>
+
+    <div class="messages">
+      <%= render "layouts/message" %>
+    </div>
+
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

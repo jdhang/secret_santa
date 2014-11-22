@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h3>Confirm Delete</h3>
+    <p>You are about to delete the following user:</p>
+    <p><strong><%= @user.username %></strong></p>
+    <p>Are you sure?</p>
+    <br/>
+    <%= link_to "Yes, I am sure", admin_user_path(@user), method: "delete", action: "destroy", class: "btn btn-danger" %>
+    <%= link_to "Cancel", admin_users_path, class: "btn btn-default" %>
+  </div>
+</div>

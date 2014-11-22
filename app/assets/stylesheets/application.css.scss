@@ -1,0 +1,136 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+html { 
+  background: asset-url("bg1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.admin {
+  background: #FFF;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.messages {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .messages {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .messages {
+    width: 970px;
+  }
+}
+
+.alert {
+  border-radius: 0;
+}
+
+.content {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 700px;
+}
+
+.welcome-banner {
+  font-size: 300%;
+  padding: 20px;
+  text-align: center;
+  background-color: #449d44;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.header {
+  padding: 20px;
+  font-size: 250%;
+  background-color: #c9302c;
+  color: #FFF;
+}
+
+.logout {
+  font-size: 40%;
+  margin: 0;
+}
+
+.logout > a {
+  display: block;
+  color: #fff;
+}
+
+.logout > a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.content-body{
+  text-align: center;
+}
+
+.status {
+  margin: 70px 0 50px 0;
+  font-size: 275%;
+}
+
+.person {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.pick-notice {
+  margin-bottom: 10px;
+  font-size: 175%;
+}
+
+.pick-button > a {
+  font-size: 200%;
+  text-transform: uppercase;
+}
+
+.form-container {
+  margin-top: 70px;
+}
+
+.form-header {
+  background-color: #c9302c;
+  color: #fff;
+  font-size: 150%;
+  padding: 10px 20px;
+}
+
+.form-body {
+  padding: 15px;
+  background-color: #c9302c;
+}
