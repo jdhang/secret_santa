@@ -119,18 +119,28 @@ body {
   text-transform: uppercase;
 }
 
-.form-container {
+.form-container,
+.nobg-form-container {
   margin-top: 70px;
+  background-color: #DDD;
+}
+
+.form-container {
+  background-color: #c9302c;
+}
+
+.form-header,
+.black-form-header {
+  font-size: 150%;
+  padding: 10px 20px 0 20px;
 }
 
 .form-header {
-  background-color: #c9302c;
   color: #fff;
-  font-size: 150%;
   padding: 10px 20px;
 }
 
+
 .form-body {
   padding: 15px;
-  background-color: #c9302c;
 }
