@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a quick and easy Secret Santa application that I made for my family's Secret Santa. I felt I would share it for anyone
+that might also want to use it.
 
-Things you may want to cover:
+You will be able to manage accounts for participants to select their Secret Santa.
 
-* Ruby version
+Note:
 
-* System dependencies
+* There is nothing stopping the admin from seeing who everyone picked so if you are the admin and are also
+participanting, use the honor system :)
 
-* Configuration
+* You will have to initially create an admin account by jumping into the Rails console.
+  * User.new({username: "admin", password: "password", role: "admin"}) will be enough to get started.
 
-* Database creation
+* This will require an even number of participants as well, otherwise there is a chance someone will pick themselves.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Happy Holidays and enjoy!
