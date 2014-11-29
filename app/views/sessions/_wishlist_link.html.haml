@@ -1,0 +1,8 @@
+-if @show == "true"
+  = link_to wishlist_match_path(show: false), method: "post", remote: true do
+    %span.glyphicon.glyphicon-chevron-down
+    hide their wishlist
+-else
+  = link_to wishlist_match_path(show: true), method: "post", remote: true do
+    %span.glyphicon.glyphicon-chevron-right
+    show their wishlist

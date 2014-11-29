@@ -1,0 +1,10 @@
+= form_for @item do |f|
+  .col-md-5
+    = f.text_field :name, class: "form-control"
+  .col-md-5
+    = f.text_field :link, class: "form-control"
+  .col-md-2.text-right
+    = button_tag type: "submit", method: "post", remote: true, class: "btn btn-success" do
+      %span.glyphicon.glyphicon-ok
+    = link_to back_row_path(@item), method: "post", remote: true, class: "btn btn-default" do
+      %span.glyphicon.glyphicon-chevron-left

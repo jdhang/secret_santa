@@ -10,8 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
@@ -74,10 +74,24 @@ body {
 }
 
 .header {
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 250%;
   background-color: #c9302c;
   color: #FFF;
+}
+
+.wishlist-toggle {
+  font-size: 50%;
+  margin: 0;
+}
+
+.wishlist-toggle > a {
+  color: #333;
+}
+
+.wishlist-toggle > a:hover {
+  text-decoration: none;
+  color: #555;
 }
 
 .logout {
@@ -86,7 +100,7 @@ body {
 }
 
 .logout > a {
-  display: block;
+  margin: 0 5px;
   color: #fff;
 }
 
@@ -96,11 +110,10 @@ body {
 }
 
 .content-body{
-  text-align: center;
 }
 
 .status {
-  margin: 70px 0 50px 0;
+  margin-top: 70px;
   font-size: 275%;
 }
 
@@ -110,6 +123,7 @@ body {
 }
 
 .pick-notice {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-size: 175%;
 }
@@ -143,4 +157,74 @@ body {
 
 .form-body {
   padding: 15px;
+}
+
+.nobg-form-body {
+  margin: 10px;
+  padding: 10px;
+}
+
+.wishlist-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.item-table {
+  font-size: 125%;
+}
+
+.item-header {
+  border-bottom: 1px solid #000;
+}
+
+.item-row {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.item-row a {
+  color: #333;
+}
+
+.item-row a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+.link > a {
+  display: block;
+}
+
+.name-header,
+.link-header,
+.actions-header {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.name,
+.link {
+  padding: 8px 15px 7px 15px; 
+}
+
+.btn {
+  padding: 9px 12px;
+}
+
+.wishlist-container {
+  margin-top: 20px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.match-wishlist-item {
+  font-size: 125%;
+}
+
+.match-wishlist-item > a {
+  color: #333;
+}
+
+.match-wishlist-item > a:hover {
+  color: #555;
 }

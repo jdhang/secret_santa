@@ -1,0 +1,8 @@
+.name.col-md-5= @item.name
+.link.col-md-5
+  = link_to "Go to Item's Link", full_url(@item.link) if !@item.link.empty?
+.actions.col-md-2.text-right
+  = link_to edit_row_item_path(@item), method: "post", remote: true, class: "btn btn-warning" do
+    %span.glyphicon.glyphicon-pencil
+  = link_to item_path(@item), method: "delete", action: "destroy", data: {confirm: "Deleting item, Are you sure?"}, class: "btn btn-danger" do
+    %span.glyphicon.glyphicon-remove

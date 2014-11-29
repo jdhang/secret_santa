@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :require_user, only: [:home, :destroy]
+  before_action :require_user, only: [:home, :destroy, :wishlist, :match_wishlist]
   layout "application"
 
   def home
@@ -28,6 +28,18 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     flash[:notice] = "You have successfully logged out."
     redirect_to root_path
+  end
+
+  def wishlist
+    @item = Item.new
+  end
+
+  def match_wishlist 
+    @match = User.find(current_user.matched_id) if current_user.matched
+    @show = params[:show]
+    respond_to do |format|
+      format.js {}
+    end
   end
 
   def pick

@@ -1,0 +1,7 @@
+<% if @show == "true" %>
+  $(".wishlist-toggle").html("<%= escape_javascript(render 'wishlist_link') %>")
+  $(".wishlist-container").html("<%= escape_javascript(render 'match_wishlist') %>")
+<% else %>
+  $(".wishlist-toggle").html("<%= escape_javascript(render 'wishlist_link') %>")
+  $(".wishlist-container").html("")
+<% end %>

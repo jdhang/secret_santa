@@ -1,0 +1,10 @@
+.row.content
+  .header.text-center
+    %span Set your Wishlist!
+    .logout
+      = link_to "home", "/home"
+      |
+      = link_to "logout", "/logout"
+  .col-md-10.col-md-offset-1
+    .content-body.col-md-12
+      =render "list"

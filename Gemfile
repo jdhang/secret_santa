@@ -12,6 +12,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'bootstrap-sass', '~> 3.3.0'
 gem 'autoprefixer-rails'
 gem 'bcrypt', '~> 3.1.7'
+gem 'haml-rails'
 
 group :doc do
   gem 'sdoc', require: false

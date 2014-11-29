@@ -4,6 +4,12 @@
     <div class="person">
       <span><%= @match.first_name + " " + @match.last_name %>!</span>
     </div>
+    <div class="wishlist-toggle">
+      <%= link_to  wishlist_match_path(show: true), method: "post", remote: true do %>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        show their wishlist
+      <% end %>
+    </div>
   </div>
 <% else %>
   <div class="status">

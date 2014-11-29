@@ -1,0 +1,7 @@
+= form_for @item do |f|
+  .name
+    .input-group
+      = f.text_field :name, class: "form-control"
+      %span.input-group-btn
+        = button_tag type: "submit", class: "btn btn-success" do
+          %span.glyphicon.glyphicon-ok
