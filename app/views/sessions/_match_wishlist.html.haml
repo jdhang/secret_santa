@@ -1,8 +1,11 @@
--@match.items.each do |item|
-  .match-wishlist-item
-    -if !item.link.empty?
-      %span - 
-      = link_to item.name, full_url(item.link)
-    -else
-      = "- " + item.name
+-if @match.items.empty?
+  .match-wishlist-item nothing yet.
+-else
+  -@match.items.each do |item|
+    .match-wishlist-item
+      -if !item.link.empty?
+        %span - 
+        = link_to item.name, full_url(item.link)
+      -else
+        = "- " + item.name
       
